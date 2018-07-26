@@ -10,7 +10,7 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-const dbUrl = 'mongodb://<dbuser>:<dbpass>@ds137687.mlab.com:37687/chatapp_db';
+const dbUrl = 'mongodb:connection string';
 
 const Message = mongoose.model('Message', {
     name : String,
